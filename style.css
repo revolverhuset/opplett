@@ -164,8 +164,31 @@ table tbody tr td {
     text-align:center;
     border-bottom:2px solid #BBB;
     font-size:1.2rem;
+    position: relative;
 }
 
 table tbody tr td:first-child {
     border-right: 2px solid #BBB;
+}
+
+table tbody tr td.forecast:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    border-right: 10px solid;
+    border-bottom: 10px solid transparent;
+    width: 10px;
+    opacity: 0.75;
+}
+
+table tbody tr td.forecast.certain:after {
+    border-right-color: green;
+}
+table tbody tr td.forecast.somewhat_certain:after {
+    border-right-color: yellow;
+}
+table tbody tr td.forecast.uncertain:after {
+    border-right-color: red;
 }
