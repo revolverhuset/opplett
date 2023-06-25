@@ -143,13 +143,13 @@ h1 {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     margin:0 auto;
     padding-top:50px;
-    width:800px;
-    
 }
 
 table {
     border-collapse: collapse;
-    width:800px;
+    margin:auto;
+    width:80vw;
+    max-width:800px;
 }
 
 table thead tr th {
